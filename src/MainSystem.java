@@ -1,11 +1,4 @@
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.util.Scanner;
+import java.util.*;
 
 public class MainSystem {
 
@@ -47,7 +40,6 @@ public class MainSystem {
 		// TODO Auto-generated method stub
 		int isbn;
 		String title, author;
-		double price;
 
 		System.out.println("\nEnter Title: ");
 		title = in.next();
@@ -61,7 +53,7 @@ public class MainSystem {
 	/*	System.out.println("\nEnter Price: ");
 		price = in.nextDouble();
 */
-		Book b = new Book(isbn, title, author, price);
+		Book b = new Book(isbn, title, author);
 		lib.addBook(b);
 	}
 /*
