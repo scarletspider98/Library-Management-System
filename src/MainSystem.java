@@ -23,14 +23,15 @@ public class MainSystem {
 
 			int answer = in.nextInt();
 			switch (answer) {
-			case 0:
+			/*case 0:
 				System.out.println("Enter the file name to load");
 				loadScript(in.next());
 				break;
-
+			 
 			case 1:
 				saveAndQuit();
 				break;
+				*/
 			case 2:
 				System.out.println(lib.toString());
 				break;
