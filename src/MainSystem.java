@@ -88,7 +88,7 @@ public class MainSystem {
 
 	}
 */
-	private static void loadScript(String name) {
+/*	private static void loadScript(String name) {
 		// TODO Auto-generated method stub
 		FileInputStream fis = null;
 		ObjectInputStream in = null;
@@ -113,5 +113,5 @@ public class MainSystem {
 			System.out.println("\nThe file does not exist!");
 		}
 	}
-
+*/
 }
