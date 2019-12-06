@@ -4,16 +4,17 @@ public class MainSystem {
 
 	static String fileName = null;
 	static Library lib = new Library();
+	static Member_database mem = new Member_database();
 	static Scanner in = new Scanner(System.in);
 	static Boolean running = true;
 
 	public static void main(String[] args) {
 		while (running) {
-			System.out.println("\nEnter 0 for load a library."
-					+ "\nEnter 1 for save and quit"
+			System.out.println("\nEnter 1 for add book to library "
 					+ "\nEnter 2 for list all books in library"
-					+ "\nEnter 3 for add book to library");
-
+					+ "\nEnter 3 for add member to library"
+					+ "\nEnter 4 for list all members in library");
+			
 			int answer = in.nextInt();
 			switch (answer) {
 			/*case 0:
@@ -25,12 +26,18 @@ public class MainSystem {
 				saveAndQuit();
 				break;
 				*/
-			case 2:
-				System.out.println(lib.toString());
-				break;
-			case 3:
+			case 1:
 				addBook();
 				break;
+			case 2:
+				System.out.println(lib.toString());
+				break;	
+			case 3:
+				addMember();
+				break;	
+			case 4:
+				System.out.println(mem.toString());
+				break;	
 			}
 		}
 		System.exit(0);
@@ -56,6 +63,30 @@ public class MainSystem {
 		Book b = new Book(isbn, title, author);
 		lib.addBook(b);
 	}
+	
+	private static void addMember() {
+		// TODO Auto-generated method stub
+		int IDNum;
+		String Name, Email;
+
+		System.out.println("\nEnter Name: ");
+		Name = in.next();
+
+		System.out.println("\nEnter Email: ");
+		Email = in.next();
+
+		System.out.println("\nEnter IDNum: ");
+		IDNum = in.nextInt();
+
+	/*	System.out.println("\nEnter Price: ");
+		price = in.nextDouble();
+	 */
+		Member m = new Member(IDNum, Name, Email);
+		mem.addMember(m);
+	}
+	
+	
+	
 /*
 	private static void saveAndQuit() {
 		// TODO Auto-generated method stub
