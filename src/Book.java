@@ -1,6 +1,6 @@
-import java.io.Serializable;
+import java.util.*;
 
-public class Book implements Serializable{
+public class Book {
 	
 	private int isbn;
 	private String title, author;
