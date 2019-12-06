@@ -58,13 +58,13 @@ public class MainSystem {
 		System.out.println("\nEnter ISBN: ");
 		isbn = in.nextInt();
 
-		System.out.println("\nEnter Price: ");
+	/*	System.out.println("\nEnter Price: ");
 		price = in.nextDouble();
-
+*/
 		Book b = new Book(isbn, title, author, price);
 		lib.addBook(b);
 	}
-
+/*
 	private static void saveAndQuit() {
 		// TODO Auto-generated method stub
 		System.out.println("Enter file name: ");
@@ -87,7 +87,7 @@ public class MainSystem {
 		}
 
 	}
-
+*/
 	private static void loadScript(String name) {
 		// TODO Auto-generated method stub
 		FileInputStream fis = null;
