@@ -17,7 +17,18 @@ public class MainSystem {
 					+ "\nEnter '4' to list all the members in the library."
 			       + "\nEnter '5' to check the availability of study rooms in the library.");
 			
-			int answer = in.nextInt();
+			int answer = -1;
+			
+			try {
+			answer = in.nextInt();
+			} catch(Exception e) { 
+				System.out.println("Please enter a valid integer.");
+				in.next();
+			}
+			if(answer <= 0 || answer > 5) {
+				System.out.println("Enter an Intger 1 through 5");
+			}
+			
 			switch (answer) {
 			case 1:
 				addBook();
@@ -35,12 +46,7 @@ public class MainSystem {
 				Room.init_rooms();
 				for(int  i = 0; i < Room.rooms.length; i++) {
 					System.out.println(Room.rooms[i]);
-					/* if(i == 0) {
-						System.out.println("Available");
-					}
-					else {
-						System.out.println("Unavailable");
-					} */
+
 				}
 			}
 		}
@@ -48,7 +54,7 @@ public class MainSystem {
 	}
 
 	private static void addBook() {
-		int isbn;
+		int isbn = 0000;
 		String title, author;
 
 		System.out.println("\nEnter Title: ");
@@ -58,14 +64,19 @@ public class MainSystem {
 		author = in.next();
 
 		System.out.println("\nEnter ISBN: ");
+		try {
+			
+		
 		isbn = in.nextInt();
-
+		} catch (Exception e) {
+			System.out.println("Please enter numbers, no other characters.");
+		}
 		Book b = new Book(isbn, title, author);
 		lib.addBook(b);
 	}
 	
 	private static void addMember() {
-		int IDNum;
+		int IDNum = 0000;
 		String Name, Email;
 
 		System.out.println("\nEnter Name: ");
@@ -75,7 +86,12 @@ public class MainSystem {
 		Email = in.next();
 
 		System.out.println("\nEnter IDNum: ");
+		
+		try {
 		IDNum = in.nextInt();
+		} catch (Exception e) {
+			System.out.println("Please enter numbers, no other characters.");
+		}
 
 		Member m = new Member(IDNum, Name, Email);
 		mem.addMember(m);
