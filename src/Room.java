@@ -10,15 +10,25 @@ public class Room {
 		}
 	}
 
+	public String availbility() {
+		if(this.avail == 1) {
+			return "Available";
+		}
+		return "Unavailable";
+	}
+	
 	public static int random_num() {
 		double random = java.lang.Math.random();
 		if(random > 0.5d) {
 			//return 1;
 			
-			System.out.println("Available room");
+			return 1;
+			
 		}
 		//return 0;
-		System.out.println("Unavailable room");
+		return 0 ;
+		
+		
 		
 	}
 	
@@ -31,6 +41,6 @@ public class Room {
 	
 
 	public String toString() {
-		return this.name + " " + this.avail;
+		return this.name + " : " + this.availbility();
 	}
 }
