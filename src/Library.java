@@ -1,5 +1,4 @@
 import java.util.*;
-//change
 
 public class Library extends Object  {
 	
@@ -9,8 +8,8 @@ public class Library extends Object  {
 		collection = new ArrayList<Book>();
 	}
 	
-	public void addBook(Book book){
-		collection.add(book);
+	public void addBook(Book b){
+		collection.add(b);
 	}
 	
 	@Override

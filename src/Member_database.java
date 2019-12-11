@@ -1,29 +1,22 @@
 import java.util.*;
-//change
 
 public class Member_database extends Object  {
 	
-	private List<Member> collection;
+	private List<Member> information;
 
 	public Member_database(){
-		collection = new ArrayList<Member>();
+		information = new ArrayList<Member>();
 	}
 	
-	public void addMember(Member book){
-		collection.add(book);
+	public void addMember(Member m){
+		information.add(m);
 	}
 	
 	@Override
 	public String toString() {
 		String total = "\n";
-		/*
-		for (int i=0; i<collection.size(); i++){
-			Book b = collection.get(i);
-			total = total + b.toString();
-			
-		}
-		*/
-		Iterator<Member> i = collection.iterator();
+		
+		Iterator<Member> i = information.iterator();
 		while(i.hasNext()){
 			Member b = (Member) i.next();
 			total = total + b.toString();
