@@ -11,21 +11,13 @@ public class MainSystem {
 	public static void main(String[] args) {
 		while (running) {
 			System.out.println("\nEnter 1 for add book to library "
-					+ "\nEnter 2 for list all books in library"
-					+ "\nEnter 3 for add member to library"
-					+ "\nEnter 4 for list all members in library");
+					+ "\nEnter '2' for list all books in library"
+					+ "\nEnter '3' for add member to library"
+					+ "\nEnter '4' for list all members in library"
+			       + "\nEnter '5' to check the availability of study rooms in the library");
 			
 			int answer = in.nextInt();
 			switch (answer) {
-			/*case 0:
-				System.out.println("Enter the file name to load");
-				loadScript(in.next());
-				break;
-			 
-			case 1:
-				saveAndQuit();
-				break;
-				*/
 			case 1:
 				addBook();
 				break;
@@ -38,6 +30,9 @@ public class MainSystem {
 			case 4:
 				System.out.println(mem.toString());
 				break;	
+			case 5: 
+				Room.init_rooms();
+				System.out.println();
 			}
 		}
 		System.exit(0);
