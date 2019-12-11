@@ -33,7 +33,15 @@ public class MainSystem {
 				break;	
 			case 5: 
 				Room.init_rooms();
-				System.out.println();
+				for(int  i = 0; i < Room.rooms.length; i++) {
+					System.out.println(Room.rooms[i]);
+					/* if(i == 0) {
+						System.out.println("Available");
+					}
+					else {
+						System.out.println("Unavailable");
+					} */
+				}
 			}
 		}
 		System.exit(0);
