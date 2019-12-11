@@ -13,9 +13,13 @@ public class Room {
 	public static int random_num() {
 		double random = java.lang.Math.random();
 		if(random > 0.5d) {
-			return 1;
+			//return 1;
+			
+			System.out.println("Available room");
 		}
-		return 0;
+		//return 0;
+		System.out.println("Unavailable room");
+		
 	}
 	
 	public Room(String name, int avail){
@@ -24,6 +28,8 @@ public class Room {
 		
 	}
 	
+	
+
 	public String toString() {
 		return this.name + " " + this.avail;
 	}
