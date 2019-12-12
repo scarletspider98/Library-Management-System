@@ -28,8 +28,8 @@ public class Room {
 	public Room(String name, int avail){
 		this.name = name;
 		this.avail = avail;
-
 	}
+	
 	public String toString() {
 		return this.name + " : " + this.availbility();
 	}

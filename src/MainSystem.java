@@ -108,4 +108,3 @@ public class MainSystem {
 		mem.addMember(m);
 	}
 }
-
