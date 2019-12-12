@@ -20,16 +20,9 @@ public class Room {
 	public static int random_num() {
 		double random = java.lang.Math.random();
 		if(random > 0.5d) {
-			//return 1;
-			
 			return 1;
-			
 		}
-		//return 0;
 		return 0 ;
-		
-		
-		
 	}
 	
 	public Room(String name, int avail){

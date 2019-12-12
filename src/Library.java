@@ -15,13 +15,6 @@ public class Library extends Object  {
 	@Override
 	public String toString() {
 		String total = "\n";
-		/*
-		for (int i=0; i<collection.size(); i++){
-			Book b = collection.get(i);
-			total = total + b.toString();
-			
-		}
-		*/
 		Iterator<Book> i = collection.iterator();
 		while(i.hasNext()){
 			Book b = (Book) i.next();
