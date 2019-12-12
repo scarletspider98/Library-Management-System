@@ -16,7 +16,7 @@ public class MainSystem {
 					+ "\nEnter '3' to add a member to the library."
 					+ "\nEnter '4' to list all the members in the library."
 					+ "\nEnter '5' to check the availability of study rooms in the library."
-					+ "\nEnter '6' to clear.");
+					+ "\nEnter '6' to clear both the books list and the members list.");
 
 			int answer = -1;
 			//error checking: invalid integer input/inputting numbers other than 1-5
