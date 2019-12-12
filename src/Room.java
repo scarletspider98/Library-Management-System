@@ -30,9 +30,6 @@ public class Room {
 		this.avail = avail;
 		
 	}
-	
-	
-
 	public String toString() {
 		return this.name + " : " + this.availbility();
 	}
