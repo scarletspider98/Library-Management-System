@@ -1,5 +1,5 @@
 # Library-Management-System
-I.This library management system will allow librarians to perfrom various tasks that are a necessity to perform their duty. This program will allow the librarian to create a user, add a book, check avaliability to study rooms, list books and members and clear the database. These functions that we created will allow libraians to complete their multiple tasks with this one managment system.  
+I. This library management system will allow librarians to perfrom various tasks that are a necessity to perform their duty. This program will allow the librarian to create a user, add a book, check avaliability to study rooms, list books and members and clear the database. These functions that we created will allow libraians to complete their multiple tasks with this one managment system.  
 II. Features of the Program
 	-Librarians can add a book to the library
 	-Librarians can see list of all the books in the library that they add
