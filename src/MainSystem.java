@@ -15,12 +15,12 @@ public class MainSystem {
 					+ "\nEnter '2' to list all books in the library."
 					+ "\nEnter '3' to add a member to the library."
 					+ "\nEnter '4' to list all the members in the library."
-			       + "\nEnter '5' to check the availability of study rooms in the library.");
-			
+					+ "\nEnter '5' to check the availability of study rooms in the library.");
+
 			int answer = -1;
 			//error checking: invalid integer input/inputting numbers other than 1-5
 			try {
-			answer = in.nextInt();
+				answer = in.nextInt();
 			} catch(Exception e) { 
 				System.out.println("Please enter a valid integer.");
 				in.next();
@@ -28,25 +28,25 @@ public class MainSystem {
 			if(answer <= 0 || answer > 5) {
 				System.out.println("Enter an Intger 1 through 5");
 			}
-			
+
 			switch (answer) {
 			//adding a book
 			case 1:
 				addBook();
 				break;
-			//listing all the added books
+				//listing all the added books
 			case 2:
 				System.out.println(lib.toString());
 				break;	
-			//adding members to the library
+				//adding members to the library
 			case 3:
 				addMember();
 				break;	
-			//listing all the members that were added
+				//listing all the members that were added
 			case 4:
 				System.out.println(mem.toString());
 				break;	
-			//randomly generated study room availabilities 
+				//randomly generated study room availabilities 
 			case 5: 
 				Room.init_rooms();
 				for(int  i = 0; i < Room.rooms.length; i++) {
@@ -73,16 +73,16 @@ public class MainSystem {
 		System.out.println("\nEnter ISBN: ");
 		//error checking: entering only numbers for ISBN
 		try {
-			
-		
-		isbn = in.nextInt();
+
+
+			isbn = in.nextInt();
 		} catch (Exception e) {
 			System.out.println("Please enter numbers, no other characters.");
 		}
 		Book b = new Book(isbn, title, author);
 		lib.addBook(b);
 	}
-	
+
 	private static void addMember() {
 		int IDNum = 0000;
 		String Name, Email;
@@ -96,7 +96,7 @@ public class MainSystem {
 		System.out.println("\nEnter IDNum: ");
 		//error checking: entering only numbers for member ID
 		try {
-		IDNum = in.nextInt();
+			IDNum = in.nextInt();
 		} catch (Exception e) {
 			System.out.println("Please enter numbers, no other characters.");
 		}
@@ -105,4 +105,4 @@ public class MainSystem {
 		mem.addMember(m);
 	}
 }
-	
+
