@@ -11,6 +11,10 @@ public class Library extends Object  {
 	public void addBook(Book b){
 		collection.add(b);
 	}
+	
+	public void clear() {
+		collection.clear();
+	}
 
 	@Override
 	public String toString() {

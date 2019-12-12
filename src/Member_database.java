@@ -11,6 +11,10 @@ public class Member_database extends Object  {
 	public void addMember(Member m){
 		information.add(m);
 	}
+	
+	public void clear() {
+		information.clear();
+	}
 
 	@Override
 	public String toString() {
