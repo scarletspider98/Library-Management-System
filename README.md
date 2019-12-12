@@ -2,7 +2,7 @@
 I. This library management system will allow librarians to perform various tasks that are a necessity to perform their duty. This program will allow the librarian to create a user, add a book, check availability to study rooms, list books and members and clear the database. These functions that we created will allow librarians to complete their multiple tasks with this one management system.  
 
 II. Features of the Program
-	+-Librarians can add a book to the library
+	-Librarians can add a book to the library
 	-Librarians can see list of all the books in the library that they add
 	-Librarians can create a member account for those who want a library card
 	-Librarians can see list of all the members in the library
