@@ -13,14 +13,14 @@ II. Features of the Program
 III. Instructions on how to run and use the program
 When the program is run it will output:
 
-Welcome to the Library Management System!
+        Welcome to the Library Management System!
 
-Enter '1' to add a book to the library.
-Enter '2' to list all books in the library.
-Enter '3' to add a member to the library.
-Enter '4' to list all the members in the library.
-Enter '5' to check the availability of study rooms in the library.
-Enter '6' to clear both the books list and the members list.
+        Enter '1' to add a book to the library.
+        Enter '2' to list all books in the library.
+        Enter '3' to add a member to the library.
+        Enter '4' to list all the members in the library.
+        Enter '5' to check the availability of study rooms in the library.
+        Enter '6' to clear both the books list and the members list.
 
 In which, the librarian will have to enter the number of what tasks they want to complete. 
 For when 1 is entered the librarian will be able to enter Title, Author and ISBN number.
