@@ -10,7 +10,7 @@ public class MainSystem {
 
 	public static void main(String[] args) {
 		while (running) {
-			System.out.println("Welcome to the Library Management System!");
+			System.out.println("\nWelcome to the Library Management System!");
 			System.out.println("\nEnter '1' to add a book to the library."
 					+ "\nEnter '2' to list all books in the library."
 					+ "\nEnter '3' to add a member to the library."
@@ -18,7 +18,7 @@ public class MainSystem {
 			       + "\nEnter '5' to check the availability of study rooms in the library.");
 			
 			int answer = -1;
-			
+			//error checking: invalid integer input/inputting numbers other than 1-5
 			try {
 			answer = in.nextInt();
 			} catch(Exception e) { 
@@ -30,18 +30,23 @@ public class MainSystem {
 			}
 			
 			switch (answer) {
+			//adding a book
 			case 1:
 				addBook();
 				break;
+			//listing all the added books
 			case 2:
 				System.out.println(lib.toString());
 				break;	
+			//adding members to the library
 			case 3:
 				addMember();
 				break;	
+			//listing all the members that were added
 			case 4:
 				System.out.println(mem.toString());
 				break;	
+			//randomly generated study room availabilities 
 			case 5: 
 				Room.init_rooms();
 				for(int  i = 0; i < Room.rooms.length; i++) {
@@ -49,6 +54,8 @@ public class MainSystem {
 
 				}
 			}
+			//Print line that goes at the end of every case input because of default console size
+			System.out.println("SCROLL UP! to see user input/output");
 		}
 		System.exit(0);
 	}
@@ -64,6 +71,7 @@ public class MainSystem {
 		author = in.next();
 
 		System.out.println("\nEnter ISBN: ");
+		//error checking: entering only numbers for ISBN
 		try {
 			
 		
@@ -86,7 +94,7 @@ public class MainSystem {
 		Email = in.next();
 
 		System.out.println("\nEnter IDNum: ");
-		
+		//error checking: entering only numbers for member ID
 		try {
 		IDNum = in.nextInt();
 		} catch (Exception e) {
